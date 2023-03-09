@@ -1,0 +1,213 @@
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#090f84), to(white));
+  background: linear-gradient(90deg, #090f84, white);
+}
+
+header {
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header h1 {
+  color: white;
+}
+
+i {
+  pointer-events: none;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  margin: 0.1rem;
+}
+
+form input[type='number'] {
+  width: 30px;
+  text-align: center;
+}
+
+form input[type='text'] {
+  width: 300px;
+  text-align: center;
+}
+
+form input::-webkit-outer-spin-button,
+form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+form button {
+  background-color: #554d48;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section div.todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 400px;
+  height: 1.25rem;
+  margin: 0.25rem 0rem;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+}
+
+section div.todo p {
+  background-color: #fff;
+  color: black;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+section div.todo p.todo-text {
+  width: 300px;
+}
+
+section div.todo p.todo-time {
+  width: 50px;
+  text-align: center;
+  margin-right: 0.1rem;
+}
+
+section div.todo button {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  margin: 0.1rem;
+  color: #fff;
+}
+
+section div.todo button.check {
+  background-color: #31e431;
+}
+
+section div.todo button.trash {
+  background-color: red;
+}
+
+.checked {
+  text-decoration: line-through;
+  opacity: 0.5;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+@-webkit-keyframes scaleup {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleup {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scaledown {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes scaledown {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+div.sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.sort button {
+  width: 20%;
+  background-color: #554d48;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  border: none;
+  margin: 0.1rem;
+}
+/*# sourceMappingURL=style.css.map */

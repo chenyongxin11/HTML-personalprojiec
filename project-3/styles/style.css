@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+.orange-bgc {
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: -3vh;
+  right: 0;
+}
+
+header nav {
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+header nav ul {
+  width: 70%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+}
+
+header nav ul li a:hover {
+  color: orange;
+}
+
+.active {
+  color: orange;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2rem;
+  min-height: 80vh;
+}
+
+main section.left {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 500px;
+          flex: 3 1 500px;
+}
+
+main section.left h1 {
+  font-size: 5rem;
+  color: orange;
+  margin: 3rem;
+}
+
+main section.left p {
+  margin: 3rem;
+}
+
+main section.right {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+}
+
+main section.right img {
+  position: absolute;
+  width: 200px;
+  border-radius: 50%;
+  top: 50%;
+  right: 20vw;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+main section.table {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 500px;
+          flex: 3 1 500px;
+}
+
+main section.table table {
+  padding: 2rem;
+  border-collapse: collapse;
+}
+
+main section.table table tr {
+  border-bottom: 2px solid grey;
+  padding: 1rem;
+}
+
+main section.table table tr td {
+  padding: 2rem;
+}
+
+main section.table table tr:hover {
+  background-color: #e89d13;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+main section.picture {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+  position: relative;
+}
+
+main section.picture div.pic {
+  position: absolute;
+  left: 20%;
+  top: 10%;
+}
+
+main section.picture div.pic img {
+  width: 20vw;
+  height: 30vw;
+}
+
+main section.picture div.resume-black {
+  background-color: #827171;
+  width: 20vw;
+  height: 30vw;
+  position: absolute;
+  left: 25%;
+  top: 15%;
+  z-index: -1;
+}
+
+main section.form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+}
+
+main section.form form {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main section.form form div label {
+  font-size: 1.25rem;
+}
+
+main section.form form div input,
+main section.form form div textarea {
+  background-color: #e08958;
+  padding: 0.5rem;
+  width: 80%;
+  border: none;
+  font-size: 1.25rem;
+  color: white;
+}
+
+main section.form form div textarea {
+  vertical-align: top;
+}
+
+main section.form form button {
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: white;
+  background-color: #e08958;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+main div.boundary {
+  width: 2px;
+  height: 90wh;
+  background-color: grey;
+}
+
+main section.mycontact {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+}
+
+main section.mycontact p {
+  font-size: 1.25rem;
+  padding: 2rem;
+  font-weight: 600;
+}
+
+.fourth-svg {
+  margin-right: 2.5rem;
+}
+
+@media screen and (max-width: 620px) {
+  .fourth-svg {
+    margin-right: 7rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  header nav ul {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav ul li {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid grey;
+  }
+  main section.right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.right img {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+  }
+  main section.picture {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.picture div.pic {
+    position: static;
+  }
+  main section.picture div.pic img {
+    width: 30vw;
+    height: 45vw;
+  }
+  main section.picture div.resume-black {
+    opacity: 0;
+  }
+  .orange-bgc {
+    position: absolute;
+    z-index: -1;
+    top: -5vh;
+    right: 0;
+    opacity: 0.3;
+  }
+}
+
+footer a {
+  margin: 1rem;
+}
+
+footer a img {
+  width: 80px;
+}
+/*# sourceMappingURL=style.css.map */

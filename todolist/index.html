@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <title>Todo List</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="KrisChen" />
+    <meta name="robots" content="index, follow" />
+    <base target="_self" />
+    <!-- <meta name="description" content="kr" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Kris Chen's Todo List</h1>
+    </header>
+
+    <form>
+      <input type="text" required />
+      <input type="number" max="12" min="1" placeholder="M" required />
+      <input type="number" max="31" min="1" placeholder="D" required />
+      <button type="submit">Add</button>
+    </form>
+
+    <div class="sort">
+      <button type="submit">整理</button>
+    </div>
+
+    <section></section>
+  </body>
+  <script src="./styles/app.js"></script>
+</html>

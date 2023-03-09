@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #c4c4c4;
+  width: 100%;
+  padding: 1rem;
+}
+
+header h3 {
+  font-size: 3rem;
+}
+
+header h3 {
+  font-size: 1.1rem;
+}
+
+header h1 img {
+  width: 3%;
+}
+
+nav {
+  background-color: #3b3838;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding-left: 1rem;
+  /* flex-wrap: wrap; */
+}
+
+@media screen and (max-width: 590px) {
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li a {
+  color: #a69f9f;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+nav ul li a:hover {
+  background-color: #9f8f8f;
+  color: white;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.left {
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 4;
+      -ms-flex: 4 1 550px;
+          flex: 4 1 550px;
+}
+
+section.left p {
+  margin-bottom: 1.4rem;
+  text-indent: 2rem;
+}
+
+section.left .frame {
+  width: 900px;
+  height: 500px;
+  /* margin-left: 25%; */
+  position: relative;
+}
+
+section.right {
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+}
+
+section.right p {
+  margin: 1rem;
+}
+
+section.right h4 {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+section.right iframe {
+  border-radius: 10%;
+}
+
+.author-img {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+#curve_chart {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1080px) {
+  #curve_chart {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.active {
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */
